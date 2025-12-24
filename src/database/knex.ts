@@ -1,5 +1,5 @@
-import { knex as knexConfig } from "knex";
+import createKnex from "knex";
 
 import config from "../../knexfile";
 
-export const knex = knexConfig(config);
+export const knex = createKnex(config);
